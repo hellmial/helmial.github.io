@@ -1,0 +1,373 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+/* Sidebar */
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:270px;
+height:100vh;
+background:#0f172a;
+color:white;
+padding:40px 20px;
+text-align:center;
+}
+
+.sidebar h2{
+margin-bottom:10px;
+}
+
+.sidebar p{
+margin-bottom:25px;
+}
+
+.social{
+margin-bottom:25px;
+}
+
+.social a{
+color:white;
+font-size:22px;
+margin:8px;
+text-decoration:none;
+}
+
+.sidebar nav{
+display:flex;
+flex-direction:column;
+}
+
+.sidebar nav a{
+color:white;
+padding:12px;
+text-decoration:none;
+border-radius:8px;
+margin:5px 0;
+transition:.3s;
+}
+
+.sidebar nav a:hover{
+background:white;
+color:#0f172a;
+}
+
+/* Main */
+
+main{
+margin-left:270px;
+}
+
+section{
+padding:80px 60px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero span{
+color:#2563eb;
+}
+
+.hero h3{
+margin-bottom:20px;
+color:#666;
+}
+
+.hero p{
+max-width:700px;
+line-height:30px;
+margin-bottom:30px;
+}
+
+/* Button */
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#1d4ed8;
+}
+
+/* Timeline */
+
+.timeline{
+border-left:4px solid #2563eb;
+padding-left:25px;
+}
+
+.item{
+margin-bottom:40px;
+}
+
+.item span{
+color:#2563eb;
+font-weight:bold;
+}
+
+/* Skill */
+
+.skill{
+margin-bottom:20px;
+}
+
+.bar{
+height:12px;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+}
+
+.bar div{
+height:100%;
+background:#2563eb;
+}
+
+/* Project */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px;
+}
+
+.card p{
+padding:0 20px 20px;
+}
+
+/* Contact */
+
+.contact p{
+margin:15px 0;
+font-size:18px;
+}
+
+/* Footer */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+/* ================= CV PAGE ================= */
+
+.cv-container{
+max-width:1000px;
+margin:50px auto;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.cv-header{
+text-align:center;
+margin-bottom:40px;
+}
+.cv-section{
+margin-bottom:40px;
+}
+
+.cv-section h2{
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.cv-btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 30px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+@media(max-width:900px){
+
+.sidebar{
+position:relative;
+width:100%; 
+height:auto;
+}
+
+main{
+margin-left:0;
+}
+
+.hero{
+height:auto;
+text-align:center;
+}
+
+section{
+padding:50px 25px;
+}
+
+}
+/* ===========================
+   AVATAR
+=========================== */
+
+.profile-avatar{
+    width:160px;
+    height:160px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#2563eb;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:58px;
+    font-weight:700;
+    border:5px solid #fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.cv-avatar{
+    width:170px;
+    height:170px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#2563eb;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
+    font-weight:bold;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* ===========================
+   PROJECT ICON
+=========================== */
+
+.project-icon{
+    width:100%;
+    height:180px;
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:70px;
+}
+
+.project-icon i{
+    transition:.3s;
+}
+
+.card:hover .project-icon i{
+    transform:scale(1.15);
+}
+
+/* ===========================
+   CV SKILL
+=========================== */
+
+.skill-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill-list span{
+    background:#2563eb;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:14px;
+}
+
+/* ===========================
+   PROJECT CARD CV
+=========================== */
+
+.project-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    padding:20px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+/* ===========================
+   CONTACT CV
+=========================== */
+
+.contact-info p{
+    margin:12px 0;
+    font-size:17px;
+}
+
+.contact-info i{
+    width:30px;
+    color:#2563eb;
+}
